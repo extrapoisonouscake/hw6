@@ -11,7 +11,7 @@ module.exports = {
         width:1920,
         height:1080
       },
-      retry:5,
+      retry:3,
       automationProtocol: "devtools",
       desiredCapabilities: {
         browserName: "chrome",
