@@ -17,7 +17,7 @@ export const Product: React.FC = () => {
     const dispatch = useDispatch();
     const params = useParams<ProductRouteParams>();
     const id = Number(params.id);
-
+    console.log({id})
     useEffect(() => {
         dispatch(productDetailsLoad(id));
     }, []);

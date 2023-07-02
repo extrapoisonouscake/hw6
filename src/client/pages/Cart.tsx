@@ -44,7 +44,7 @@ export const Cart: React.FC = () => {
         const total = Object.values(cart).reduce((sum, { count, price }) => sum + count * price, 0);
 
         content = (
-            <table className={bem('Table', ['table'])}>
+            <table data-testid="summary-table" className={bem('Table', ['table'])}>
                 <thead>
                     <tr>
                         <th scope="col">#</th>
